@@ -1,0 +1,23 @@
+﻿
+
+[
+    {
+        "pathContains": "Formation",
+        "commentToPrepend" : "<!-- This file was automatically transformed for Pre-production environment. Previous file name: $PREV_FILE_NAME -->",
+        "savePreviousVersion" : true,
+        "movements" : { 
+            "web\\.?Form(?:ation)?\\.config" : "web.config",
+            "app\\.?Form(?:ation)?\\.config" : "$APP_NAME.config"
+        }
+    },
+
+    {
+        "pathContains": "Production",
+        "commentToPrepend" : "<!-- This file was automatically transformed for Production environment. Previous file name: $PREV_FILE_NAME -->",
+        "savePreviousVersion" : true,
+        "movements" : { 
+            "web\\.?Prod(?:uction)?\\.config" : "web.config",
+            "app\\.?Prod(?:uction)?\\.config" : "$APP_NAME.config"
+        }
+    }
+]
